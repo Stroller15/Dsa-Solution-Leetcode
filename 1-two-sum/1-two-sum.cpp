@@ -5,7 +5,7 @@ public:
         unordered_map<int,int> m;
         for(int i=0;i<nums.size();i++)
         {
-            if((m.find(target-nums[i])) != m.end())
+            if((m.count(target-nums[i])) >0)
             {
                 ans.push_back(i);
                 ans.push_back(m[target-nums[i]]);
