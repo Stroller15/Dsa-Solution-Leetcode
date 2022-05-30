@@ -1,17 +1,24 @@
 class Solution {
 public:
     int majorityElement(vector<int>& nums) {
-        int n = nums.size();
-         unordered_map < int , int > umap;//create map in o(n)
-           for(int i =0 ; i<n ; i++)
-             umap[nums[i]]++;
-  
-           for(auto x : umap)            //in searching time o(n)
-            if(x.second > n/2)
-            return x.first;
-        return 0;
+        int  size = nums.size();
+        int major = nums[0],count = 1;
         
-    }
+        for(int i =1 ;i < size ; i++)
+        {
+            if(nums[i] == major)
+                count++;
+            else
+                count--;
+            
+            if(count == 0)
+            {
+                major = nums[i];
+                count = 1;
+            }
+        }
+        
+        return major;
+        
+    }              //moore's algoritham
 };
-
- //TC - O(n)  and  SC - O(n)
