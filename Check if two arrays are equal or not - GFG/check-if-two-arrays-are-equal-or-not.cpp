@@ -14,15 +14,19 @@ class Solution{
     //Function to check if two arrays are equal or not.
     bool check(vector<ll> A, vector<ll> B, int N) {
         //code here
-        int count = 0 ;
-        if(A.size() != B.size())  return 0;
-        sort(A.begin() , A.end());
-        sort(B.begin(), B.end());
-        for(int i = 0; i < A.size(); ++i){
-            if(A[i] != B[i]) return 0;
-        }
-        return 1;
-       
+        unordered_map<ll,ll> map;
+        
+        for(int i = 0 ; i < A.size() ; i++)
+        map[A[i]]++;
+        
+        for(int i = 0 ; i < A.size() ; i++)
+        map[B[i]]--;
+        
+        for(auto i: map)
+        if(i.second!=0) return false;
+        
+        return true;
+    
     }
 };
 
