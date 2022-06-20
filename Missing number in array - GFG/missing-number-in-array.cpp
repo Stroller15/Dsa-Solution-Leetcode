@@ -14,22 +14,26 @@ class Solution{
   public:
     int MissingNumber(vector<int>& array, int n) {
         // Your code goes here
-        int tempXor = 0;
+        // int tempXor = 0;
         
-        for(int i = 0 ; i < n-1 ; i++){
-            tempXor ^= array[i];
+        // for(int i = 0 ; i < n-1 ; i++){
+        //     tempXor ^= array[i];
             
+        // }
+        
+        // for(int i = 1 ; i <= n ; i++){
+        //     tempXor ^= i;
+        // }
+        
+        // return tempXor;
+        int sum = 0;
+        for(int i = 0 ; i < n-1 ; i++){
+            sum += array[i];
         }
         
-        for(int i = 1 ; i <= n ; i++){
-            tempXor ^= i;
-        }
-        
-        return tempXor;
-        
-        
-        
-        
+        int formulaSum = (n * (n + 1)) / 2;
+        int result = formulaSum - sum;
+        return result;
         
         
         
