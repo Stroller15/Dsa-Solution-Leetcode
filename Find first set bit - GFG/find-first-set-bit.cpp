@@ -16,12 +16,18 @@ class Solution
     unsigned int getFirstSetBit(int n)
     {
         // Your code here
-        int sum = 0;
-        for(int i = 0 ; i < 32 ; i++){
-            if((n >> i) & 1)  return sum+1;
-            else
-            sum++;
-        }
+        if(n == 0) return 0;
+       unsigned int tempNum = (n & (~(n-1)));
+       unsigned int res = log2(tempNum);
+        return res+1;
+        
+        
+        
+        
+        
+        
+        
+        
     }
 };
 
