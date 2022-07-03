@@ -7,21 +7,21 @@
 
 <p><span style="font-size:18px"><strong>Example 1:</strong></span></p>
 
-<pre style="position: relative;"><span style="font-size:18px"><strong>Input:</strong>
+<pre><span style="font-size:18px"><strong>Input:</strong>
 N = 6
 A[] = {3, 2, 1, 56, 10000, 167}
 <strong>Output:</strong>
-min = 1, max =  10000</span><div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
+min = 1, max =  10000</span></pre>
 
 <p>&nbsp;</p>
 
 <p><span style="font-size:18px"><strong>Example 2:</strong></span></p>
 
-<pre style="position: relative;"><span style="font-size:18px"><strong>Input:</strong>
+<pre><span style="font-size:18px"><strong>Input:</strong>
 N = 5
 A[]  = {1, 345, 234, 21, 56789}
 <strong>Output:</strong>
-min = 1, max = 56789</span><div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
+min = 1, max = 56789</span></pre>
 
 <p>&nbsp;</p>
 
