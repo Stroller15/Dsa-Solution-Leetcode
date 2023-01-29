@@ -1,3 +1,8 @@
-![image](https://user-images.githubusercontent.com/84174011/208840406-b708af9d-89b0-4edd-80fd-7ba233bfd981.png)
-![image](https://user-images.githubusercontent.com/84174011/208840578-a791a750-678a-4f09-9968-f0b5cdcfc4ee.png)
+ # LeetCode Solutions (C++)
+This project contains solutions to various LeetCode problems in C++.
 
+### Getting Started
+Each problem is contained in its own C++ file, with the file name corresponding to the problem name on LeetCode. To run a solution, you will need a C++ compiler such as GCC or Clang. After you have a compiler installed, you can open the file with the solution you want to run, and then use the compiler to build and run the solution.
+
+#### Author
+Shubham Verma
