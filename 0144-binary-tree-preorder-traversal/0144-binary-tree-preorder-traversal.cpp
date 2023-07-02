@@ -12,7 +12,7 @@
  
 //************* RECURSIVE ***************
 
-//  class Solution {
+// class Solution {
 // private:
 //    void helper(TreeNode *root , vector<int> &ans) {
 //        if(!root) return;
@@ -21,6 +21,7 @@
 //        helper(root -> left , ans);
 //        helper(root->right , ans);
 //    }
+
 // public:
 //     vector<int> preorderTraversal(TreeNode* root) {
 //         vector<int> ans;
@@ -43,8 +44,8 @@ public:
             TreeNode* node = st.top();
             st.pop();
 
-            if(node -> right != NULL) st.push(node->right);
-            if(node -> left != NULL) st.push(node->left);
+            if(node -> right) st.push(node->right);
+            if(node -> left) st.push(node->left);
 
             ans.push_back(node->val);
         }
