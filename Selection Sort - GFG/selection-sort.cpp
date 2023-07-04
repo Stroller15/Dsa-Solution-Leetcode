@@ -10,6 +10,11 @@ void swap(int *xp, int *yp)
 
 
 // } Driver Code Ends
+
+// Time complexity - O(N^2)
+
+
+
 class Solution
 {
     public:
@@ -21,13 +26,19 @@ class Solution
     void selectionSort(int arr[], int n)
     {
         for (int i = 0; i < n - 1; i++) {
-    int mini = i;
-    for (int j = i + 1; j < n; j++) {
-      if (arr[j] < arr[mini]) {
-        swap(arr[j], arr[mini]);
+        int mini = i;
+        for (int j = i + 1; j < n; j++) {
+            
+        if (arr[j] < arr[mini]) {
+            
+        // swap(arr[j], arr[mini]);
+        int temp = arr[j];
+        arr[j] = arr[mini];
+        arr[mini] = temp;
       }
     }
-        }
+    
+    }
     }
 };
 
