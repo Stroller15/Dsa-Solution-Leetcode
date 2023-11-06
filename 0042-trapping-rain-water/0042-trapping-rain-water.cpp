@@ -22,7 +22,7 @@ public:
             maxR[i] = maxSoFarRight;
         }
 
-        // build a array -> get diff of maxL and maxR and minus height[i] for getting that how much water each height can consume
+        // build a array -> get diff of maxL and maxR and minus height[i] for getting that how      much water each height can consume
 
         vector<int> water(n);
         int ans = 0;
