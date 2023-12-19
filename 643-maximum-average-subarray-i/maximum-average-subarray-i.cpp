@@ -26,9 +26,9 @@ public:
         while(j < n) {
             sum += nums[j];
 
-            if((j - i + 1) < k) j++;
-
-            else if((j - i + 1) == k) {
+            if((j - i + 1) < k) {
+                j++;
+            } else {
                 double avg = sum/k;
                 maxAverage = max(maxAverage, avg);
 
